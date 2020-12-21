@@ -32,7 +32,7 @@
         </li>
         <li class="nav-item">
         <c:url value="/student.jsp" var="student"></c:url>
-          <a class="nav-link">Student</a>
+          <a class="nav-link" href="${student}">Student</a>
         </li>
          <li class="nav-item">
          <c:url value="/add-student" var="addstudent"></c:url>

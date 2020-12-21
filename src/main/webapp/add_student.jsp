@@ -16,7 +16,7 @@
    <h3 class="">Add New Student</h3>
    <hr>
     <c:url value="/add-student" var="add"></c:url>
-    <form action="${add}" method="post">
+    <form action="${add}" method="post" enctype="multipart/form-data">
   	<div class="form-group">
   		<label for="name">Student Name</label>
   		<input type="text" name="sname" class="form-control w-50" required="required" placeholder="Enter your name">
@@ -48,6 +48,10 @@
   		<div class="form-group">
   		<label for="date">DOB</label>
   		<input type="date" name="date" class="form-control w-50" required="required">
+  	</div>
+  	<div class="form-group">
+  		<label for="date">Photo</label>
+  		<input type="file" name="photo" class="form-control w-50" required="required">
   	</div>
   		<div class="form-group">
   		<br>

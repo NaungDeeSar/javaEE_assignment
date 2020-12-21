@@ -24,7 +24,7 @@
     <table class="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
+      <th scope="col">Photo</th>
       <th scope="col">Student Name</th>
       <th scope="col">Email</th>
       <th scope="col">Age</th>
@@ -38,7 +38,10 @@
  
   <c:forEach items="${studentlist}" var="student" >
    <tr>
-      <th scope="row">1</th>
+      <th>
+      <img  src="/javaEE-06-EL-JSPL/Uploads/${student.profile}" 
+      alt="image" class="img-fluid" width="150px" height="150px">
+      </th>
       <td>${student.sname}</td>
       <td>${student.email}</td>
       <td>${student.age}</td>
